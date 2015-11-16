@@ -11,6 +11,7 @@
 
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="bower_components/font-awesome-animation/dist/font-awesome-animation.min.css">
     <link rel="stylesheet" href="css/main.css">
 
     <!--[if lt IE 9]>
@@ -21,7 +22,7 @@
 </head>
 <body>
 
-    <nav class="navbar navbar-default navbar-static-top">
+    <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapse" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
@@ -30,35 +31,9 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a  class="navbar-brand" href="#">PyLorean</a>
+                <a  id="navbar-brand" class="navbar-brand" href="#">PyLorean</a>
             </div>
 
-            <!-- Exemplo login navbar
-
-            <div id="navbar" class="navbar-collapse collapse">
-                <ul class="nav navbar-nav navbar-right">
-                    <form role="form" class="login-nav">
-                        <ul class="list-inline">
-                            <li class="form-group-sm">
-                                <input type="email" class="form-control" id="email" placeholder="Email" required>
-                            </li>
-                            <li class="form-group-sm">
-                                <input type="password" class="form-control" id="pwd" placeholder="Senha" required>
-                            </li>
-                        </ul>
-                        <ul class="list-inline">
-                            <li class="checkbox">
-                                <label><input type="checkbox" name="remember" value="remember">Permaneça conectado</label>
-                            </li>
-                            <li>
-                                <p><a href="#">Esqueceu sua senha?</a></p>
-                            </li>
-                        </ul>
-                    </form>
-                </ul>
-
-            </div>
-            -->
         </div><!--//.container -->
     </nav><!--//.navbar -->
 
@@ -80,9 +55,8 @@
                         <li role="presentation"><a href="#signup" aria-controls="signup" role="tab" data-toggle="tab">Cadastre-se</a></li>
                     </ul>
 
-
+                    <!-- Tab content -->
                     <div class="tab-content">
-
                         <!-- Login Panel -->
                         <div role="tabpanel" class="tab-pane fade in active" id="login">
                             <h2 class="text-center">Login</h2>
@@ -115,7 +89,7 @@
                                 <form role="form">
                                     <div class="form-group">
                                         <!--<label for="email">E-mail:</label>-->
-                                        <input type="email" class="form-control" id="email" placeholder="Email" required>
+                                        <input type="email" class="form-control" id="email" placeholder="E-mail" required>
                                     </div>
                                     <div class="form-group">
                                         <!--<label for="pwd">Password:</label>-->
@@ -126,8 +100,8 @@
                                     </div>
                                     <button type="submit" class="btn-login btn btn-default center-block">Entrar</button>
                                 </form>
-                                <span class="recover-pwd text-right" data-toggle="modal" data-target="#myModal">
-                                    <p><a href="#">Esqueceu sua senha?</a></p>
+                                <span class="recover-pwd text-right">
+                                    <p><a href="recover-pwd.html">Esqueceu sua senha?</a></p>
                                 </span>
                             </div>
                         </div><!--//.login -->
@@ -137,24 +111,25 @@
                         <div role="tabpanel" class="tab-pane fade" id="signup">
                             <h2 class="text-center">Cadastre-se</h2>
                             <div class="login-social-media text-center">
-                               <ul class="list-unstyled">
-                                   <li>
-                                       <a href="#">
+
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <a href="#">
                                            <button type="button" class="btn-facebook btn btn-default"><i class="fa fa-facebook-f"></i> cadastre via facebook</button>
                                        </a>
-                                   </li>
-                                   <li>
-                                       <a href="#">
-                                           <button type="button" class="btn-google btn btn-default"><i class="fa fa-google-plus"></i> cadastre via google+</button>
-                                       </a>
-                                   </li>
-                                   <li>
-                                       <a href="#">
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <button type="button" class="btn-google btn btn-default"><i class="fa fa-google-plus"></i> cadastre via google+</button>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
                                            <button type="button" class="btn-twitter btn btn-default"><i class="fa fa-twitter"></i> cadastre via twitter</button>
-                                       </a>
-                                   </li>
-                               </ul>
-                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div><!--//.login-social-media -->
 
                             <hr>
                             <p class="or text-center">ou</p>
@@ -163,12 +138,12 @@
                             <div class="sign-up">
                                 <form role="form">
                                     <div class="form-inline center-block">
-                                        <input type="text" class="form-control" id="name" placeholder="Name" required>
+                                        <input type="text" class="form-control" id="name" placeholder="Nome" required>
                                         <input type="text" class="form-control" id="last-name" placeholder="Segundo nome" required>
                                     </div>
 
                                     <div class="form-group">
-                                        <input type="email" class="form-control" id="email" placeholder="Email" required>
+                                        <input type="email" class="form-control" id="email" placeholder="E-mail" required>
                                     </div>
                                     <div class="form-group">
                                         <input type="password" class="form-control" id="pwd" placeholder="Senha" required>
@@ -185,55 +160,34 @@
                 </div><!--//.login-box-->
             </div><!--//.content-->
         </div><!--//.row-->
+
+
+        <div class="row">
+            <div class="col-md-12">
+                <footer class="footer button-recovery">
+                    <section>
+                        <article>
+                            <h4>Links</h4>
+                            <ul class="list-unstyled">
+                                <li><a href="">Sobre</a></li>
+                                <li><a href="">Equipe</a></li>
+                                <li><a href="">Contato</a></li>
+                            </ul>
+                        </article>
+                    </section>
+                </footer><!--//.footer-->
+
+                <footer class="footer-right">
+                    <p>
+                        <i class="fa fa-copyright"></i> 2015 PyLorean &middot; Projetado e Construido com <i class="fa fa-heart faa-pulse animated"></i> usando
+                        <a href="http://getbootstrap.com/" target="_blank">Bootstrap</a> & <a href="https://www.python.org/" target="_blank">Python</a> &middot;
+                        by <a href="http://saocarlos.pyladies.com/" target="_blank">PyLadies São Carlos</a>.
+                    </p>
+                </footer><!--//.footer-right -->
+            </div><!--//.content-->
+        </div><!--//.row-->
+
     </div><!--//.container-->
-
-    <!-- Modal Recover Pwd-->
-    <div class="modal fade" id="myModal" role="dialog">
-        <div class="modal-dialog modal-sm">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    <h4>Recuperação de senha.</h4>
-                </div>
-                <div class="modal-body">
-                    <form role="form">
-                        <div class="form-group">
-                            <label for="email">Digite o email cadastrado.</label>
-                            <input type="email" class="form-control" id="email" placeholder="Email" required>
-                        </div>
-                    </form>
-                </div>
-                <div class="modal-footer">
-                    <button type="submit" class="recover btn btn-default center-block" data-dismiss="modal">Enviar</button>
-                </div>
-            </div>
-        </div>
-    </div><!--//.modal-->
-
-
-    <!-- Footer -->
-    <footer class="button">
-        <section>
-            <article>
-                <h4>Desc</h4>
-                <ul class="list-unstyled">
-                    <li><a href="">Link 1</a></li>
-                    <li><a href="">Link 2</a></li>
-                    <li><a href="">Link 3</a></li>
-                    <li><a href="">Link 4</a></li>
-                    <li><a href="">Link 5</a></li>
-                    <li><a href="">Link 6</a></li>
-                </ul>
-            </article>
-        </section>
-    </footer>
-
-
-
-
-
-
-
 
 
 

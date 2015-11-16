@@ -1,21 +1,35 @@
-
+/*
+-----------------------------------------
+*               Main CSS
+-----------------------------------------
+*/
 
 body{
     margin: 0;
 }
 
 .content{
-    margin-top: 0;
+    margin-top: 4em;
 }
 
 
 /*
-    Navbar
+-----------------------------------------
+*                   Navbar
+-----------------------------------------
 */
-/*.navbar-header{
-    height: 7em;
+.navbar-default{
+    background-color: #122b40;
 }
 
+.navbar-header .navbar-brand{
+    color: #fff;
+    margin-top: 1em;
+}
+.navbar-header #navbar-brand{
+    color: #fff;
+    margin-top: .5em;
+}
 
 .login-nav> ul> li> .form-control{
     border-radius: 0;
@@ -23,28 +37,37 @@ body{
 
 .login-nav{
     margin-top: 1em;
-}*/
+}
 
+.login-nav .checkbox{
+    font-size: 1em;
+    color: #fff;
+}
 
-
-
-
-/*
-    Desc
-*/
-.desc{
-    padding: 2em;
-    margin-bottom: 3em;
+.login-nav .btn-entry{
+    border-radius: 0;
 }
 
 
-/*
-    Login Box
-*/
 
+/*
+-----------------------------------------
+*                Desc
+-----------------------------------------
+*/
+.desc{
+    padding: 2em;
+}
+
+
+
+/*
+-----------------------------------------
+*           Login Box
+-----------------------------------------
+*/
 .login-box{
     padding: 2em;
-    margin-bottom: 3em;
 }
 .or{
     margin-top: -1em;
@@ -60,7 +83,7 @@ body{
 .nav-pills li{
     width: 14em;
 }
-.nav-pills li a:active{
+.nav-pills .active{
     font-weight: 700;
 }
 
@@ -131,7 +154,7 @@ body{
 
 
 
-/* Modal - Recover Password*/
+/* Modal - Recover Password Test*/
 .recover{
     width: 10em;
     background-color: forestgreen;
@@ -145,18 +168,67 @@ body{
 
 
 
-/*
-    Footer
-*/
 
-footer.button{
-    background-color: dodgerblue;
+/*
+-----------------------------------------
+*              Footer
+-----------------------------------------
+*/
+footer.footer{
+    margin-top: 5%;
+}
+.button-recovery{
     padding: 1em;
-    margin: auto;
+    margin-top: 15%;
 }
 
-footer.button a{
-    color: #fff;
+.button-recovery ul{
+    margin-left: 1em;
+}
+
+/* Footer right */
+.footer-right{
+    float: right;
+}
+
+.footer-right .fa-heart{
+    color: #fb866a;
+}
+
+/*
+-----------------------------------------
+*           Recovery Password
+-----------------------------------------
+*/
+
+section.msg-recovery-pwd{
+    background-color: #f8f8ff;
+    margin-top: 7em;
+    padding: 1em;
+    border: 1px solid #d3d3d3;
+    border-radius: 2px;
+}
+
+.msg-recovery-pwd .form-control{
+    width: 20em;
+    margin-top: -.3em;
+    border-radius: 0;
+}
+.msg-recovery-pwd .fa-envelope{
+    font-size: 2em;
+}
+
+/* Button */
+.buttons{
+    margin-top: 1em;
+}
+.btn-submit{
+    height: 2.5em;
+    border-radius: 0;
+}
+.btn-cancel{
+    height: 2.5em;
+    border-radius: 0;
 }
 
 
