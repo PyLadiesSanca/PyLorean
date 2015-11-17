@@ -1,0 +1,66 @@
+/*
+-----------------------------------------
+*               User CSS
+-----------------------------------------
+*/
+
+.content{
+    margin-top: 6em;
+}
+
+
+
+/*
+-----------------------------------------
+*                 Navbar
+-----------------------------------------
+*/
+.navbar-default{
+    background-color: #122b40;
+}
+
+.navbar-header .navbar-brand{
+    color: #fff;
+}
+
+
+
+
+
+/* user */
+
+
+.dropdown .fa-sort-down{
+    color: #fff;
+}
+.dropdown .dropdown-menu{
+    /*background-color: #122b40;*/
+}
+
+
+
+
+/*
+-----------------------------------------
+*               Perfil
+-----------------------------------------
+*/
+
+/* Sidebar */
+aside.sidebar{
+    padding: 1em;
+    background-color: #f5f5f5;
+    border: 1px solid #faebd7;
+    height: 30em;
+}
+.sidebar .config-text{
+}
+
+
+
+/* Section */
+section.section{
+    padding: 1em;
+    background-color: #f5f5f5;
+    border: 1px solid #faebd7;
+}

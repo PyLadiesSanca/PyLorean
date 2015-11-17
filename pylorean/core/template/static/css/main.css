@@ -1,0 +1,231 @@
+/*
+-----------------------------------------
+*               Main CSS
+-----------------------------------------
+*/
+
+body{
+    margin: 0;
+}
+
+.content{
+    margin-top: 4em;
+}
+
+
+/*
+-----------------------------------------
+*                   Navbar
+-----------------------------------------
+*/
+.navbar-default{
+    background-color: #122b40;
+}
+
+.navbar-header .navbar-brand{
+    color: #fff;
+    margin-top: 1em;
+}
+.navbar-header #navbar-brand{
+    color: #fff;
+    margin-top: .5em;
+}
+
+.login-nav> ul> li> .form-control{
+    border-radius: 0;
+}
+
+.login-nav{
+    margin-top: 1em;
+}
+
+.login-nav .checkbox{
+    font-size: 1em;
+    color: #fff;
+}
+
+.login-nav .btn-entry{
+    border-radius: 0;
+}
+
+
+
+/*
+-----------------------------------------
+*                Desc
+-----------------------------------------
+*/
+.desc{
+    padding: 2em;
+}
+
+
+
+/*
+-----------------------------------------
+*           Login Box
+-----------------------------------------
+*/
+.login-box{
+    padding: 2em;
+}
+.or{
+    margin-top: -1em;
+    margin-bottom: 1em;
+}
+
+
+/* nav-pills */
+.nav-pills > li > a{
+
+    border-radius: 0;
+}
+.nav-pills li{
+    width: 14em;
+}
+.nav-pills .active{
+    font-weight: 700;
+}
+
+
+
+
+/* Login - Sign up */
+.login-social-media .btn-default{
+    width: 15em;
+    border-radius: 0;
+}
+
+.login-social-media ul li{
+    padding-bottom: .3em;
+
+}
+
+.login-social-media ul li a{
+    text-decoration: none;
+}
+
+.login-social-media .btn-facebook{
+    background-color: #3b5998;
+    color: #fff;
+}
+.login-social-media .btn-google{
+    background-color: #dd4b39;
+    color: #fff;
+}
+
+.login-social-media .btn-twitter{
+    background-color: #00aced;
+    color: #fff;
+}
+
+/* Login */
+.btn-login, .btn-register{
+    width: 15em;
+    height: 3em;
+    background-color: forestgreen;
+    color: #fff;
+}
+.btn-login:hover, .btn-register:hover{
+    background-color: darkolivegreen;
+    color: #fff;
+}
+
+.recover-pwd p{
+    padding-top: 1em;
+}
+
+
+/* Sign up */
+.sign-up .form-inline{
+}
+
+.sign-up #name{
+    float: left;
+    margin-bottom: 1em;
+}
+.sign-up #last-name{
+    float: right;
+    margin-bottom: 1em;
+}
+
+
+
+/* Modal - Recover Password Test*/
+.recover{
+    width: 10em;
+    background-color: forestgreen;
+    color: #fff;
+    border-radius: 0;
+}
+.recover:hover{
+    background-color: darkgreen;
+    color: #fff;
+}
+
+
+
+
+/*
+-----------------------------------------
+*              Footer
+-----------------------------------------
+*/
+footer.footer{
+    margin-top: 5%;
+}
+.button-recovery{
+    padding: 1em;
+    margin-top: 15%;
+}
+
+.button-recovery ul{
+    margin-left: 1em;
+}
+
+/* Footer right */
+.footer-right{
+    float: right;
+}
+
+.footer-right .fa-heart{
+    color: #fb866a;
+}
+
+/*
+-----------------------------------------
+*           Recovery Password
+-----------------------------------------
+*/
+
+section.msg-recovery-pwd{
+    background-color: #f8f8ff;
+    margin-top: 7em;
+    padding: 1em;
+    border: 1px solid #d3d3d3;
+    border-radius: 2px;
+}
+
+.msg-recovery-pwd .form-control{
+    width: 20em;
+    margin-top: -.3em;
+    border-radius: 0;
+}
+.msg-recovery-pwd .fa-envelope{
+    font-size: 2em;
+}
+
+/* Button */
+.buttons{
+    margin-top: 1em;
+}
+.btn-submit{
+    height: 2.5em;
+    border-radius: 0;
+}
+.btn-cancel{
+    height: 2.5em;
+    border-radius: 0;
+}
+
+
