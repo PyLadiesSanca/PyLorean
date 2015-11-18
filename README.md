@@ -83,6 +83,6 @@ $ bower install font-awesome
 <link rel="stylesheet" href="static/bower_components/font-awesome/css/font-awesome.min.css">
 ```
 
-Documentação [Font-Awesome](http://fortawesome.github.io/Font-Awesome/get-started/).
+Documentação [Font-Awesome](http://fontawesome.io/get-started/).
 
 ## Como usar

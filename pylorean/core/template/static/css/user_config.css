@@ -5,7 +5,7 @@
 */
 
 .content{
-    margin-top: 6em;
+    margin-top: 8em;
 }
 
 
@@ -24,12 +24,7 @@
 }
 
 
-
-
-
 /* user */
-
-
 .dropdown .fa-sort-down{
     color: #fff;
 }
@@ -49,18 +44,51 @@
 /* Sidebar */
 aside.sidebar{
     padding: 1em;
+    height: 30em;
     background-color: #f5f5f5;
     border: 1px solid #faebd7;
-    height: 30em;
-}
-.sidebar .config-text{
+    border-radius: 2px;
 }
 
+
+
+/* Opções */
+.sidebar ul{
+    margin: 2em -1em;
+}
+.sidebar ul li{
+    padding: .8em;
+}
+
+.sidebar ul li{
+    background-color: #faebd7;
+    color: #122b40;
+}
+.sidebar ul li:hover{
+    background-color: #1b6d85;
+    color: #fff;
+
+    -o-transition: .7s;
+    -webkit-transition: .7s;
+    -moz-transition: .7s;
+    transition: .7s;
+}
+.sidebar a{
+    text-decoration: none;
+    letter-spacing: .1em;
+    color: #fff;
+}
+.sidebar .fa{
+    margin-left: 2em;
+    padding-right: 2em;
+}
 
 
 /* Section */
 section.section{
     padding: 1em;
+
     background-color: #f5f5f5;
     border: 1px solid #faebd7;
+    border-radius: 2px;
 }
