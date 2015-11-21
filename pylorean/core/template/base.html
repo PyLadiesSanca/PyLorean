@@ -1,3 +1,4 @@
+{% load staticfiles %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,13 +11,13 @@
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico"/>
 
     <!-- Bootstrap CSS-->
-    <link rel="stylesheet" href="static/bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{ static 'bower_components/bootstrap/dist/css/bootstrap.min.css'}">
     <!-- Font-awesome CSS -->
-    <link rel="stylesheet" href="static/bower_components/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{ static 'bower_components/font-awesome/css/font-awesome.min.css'}">
     <!-- Font-awesome-animation CSS -->
-    <link rel="stylesheet" href="static/bower_components/font-awesome-animation/dist/font-awesome-animation.min.css">
+    <link rel="stylesheet" href="{ static 'bower_components/font-awesome-animation/dist/font-awesome-animation.min.css'}">
     <!-- Theme CSS -->
-    <link rel="stylesheet" href="static/css/base.css">
+    <link rel="stylesheet" href="{static 'css/main.css'}">
 
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and images queries -->
@@ -47,10 +48,8 @@
     <div class="content container-fluid">
         <div class="row">
             <div class="col-md-12">
-                <section class="text-center">
-                    <h1>Conteúdo</h1>
-                    <p>Aqui fica o conteúdo!</p>
-                </section>
+                {% block content %}
+                {% endblock %}
             </div>
         </div><!--//.row-->
     </div><!--//.container-fluid-->
