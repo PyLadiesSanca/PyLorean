@@ -58,3 +58,10 @@ target/
 
 # JeBrains IDE
 .idea
+
+# vim
+*~
+*.sw[omnp]
+.venv
+
+db.sqlite3
