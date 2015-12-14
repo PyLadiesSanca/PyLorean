@@ -21,6 +21,6 @@ from core.views import IndexView, LoginView, LogoutView
 urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
     url(r'^$', IndexView.as_view(), name='index'),
-    url(r'^login/$', 'django.contrib.auth.views.login', name='login'),
-    url(r'^logout/$', 'django.contrib.auth.views.logout', name='logout'),
+    url(r'^login/$', LoginView.as_view(), name='login'),
+    url(r'^logout/$', LogoutView.as_view(), name='logout'),
 ]

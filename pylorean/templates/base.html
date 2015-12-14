@@ -40,7 +40,6 @@
             <div class="navbar-header">
                 <a  id="navbar-brand" class="navbar-brand" href="#">PyLorean</a>
             </div><!--//.navbar-header-->
-            {% block login %}
             <div class="btn pull-right">
                 {% if request.user.is_anonymous %}
                     <a href="{% url 'login' %}" class="btn btn-default navbar-btn">Login</a> 
@@ -49,7 +48,6 @@
                     <img src="https://goo.gl/zQxsGW" width=50 height=50></img>
                 {% endif %}
             </div>
-            {% endblock login %}
         </div><!--//.container -->
     </nav><!--//.navbar -->
     {% endblock menu %}
