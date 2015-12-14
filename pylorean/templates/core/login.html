@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class="row">
+    <div class="col-md-4 col-md-offset-4">
+        {% if form.errors %}
+            <div class="alert alert-danger" role="alert"> Usuário ou senha incorretos! </div>
+        {% endif %}
+        <form action="{% url 'login' %}" method="post" data-toggle="validator" role="form">
+            {% csrf_token %}
+            {% if next %}
+                <input type="hidden" name="next" value="{{ next }}" />
+            {% endif %}
+            <div class="form-group">
+                <label for="{{ form.username.id }}" class="control-label">Usuário</label>
+                <input type="text" class="form-control" id="{{ form.username.id }}" placeholder="Usuário"
+                       name="{{ form.username.name }}" required>
+             </div>
+            <div class="form-group">
+                <label for="{{ form.password.id }}" class="control-label">Senha</label>
+                <input type="password" class="form-control" id="{{ form.password.id }}" placeholder="Senha"
+                       name="{{ form.password.name }}" required>
+            </div>
+            <button type="submit" class="btn btn-default">Entrar</button>
+        </form>
+    </div>
+</div>
+{% endblock content %}
