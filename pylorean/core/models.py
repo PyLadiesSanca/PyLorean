@@ -1,4 +1,5 @@
 from django.db import models
+from django.utils.dates import WEEKDAYS
 
 
 class Appointment(models.Model):
@@ -16,5 +17,5 @@ class Appointment(models.Model):
 
 class Schedule(models.Model):
     user_id = models.ForeignKey('auth.User')
-    busy_weekday = models.DateField()
+    busy_weekday = models.IntegerField(choices=WEEKDAYS.items())
     busy_time = models.TimeField()
