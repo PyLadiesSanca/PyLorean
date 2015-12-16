@@ -2,6 +2,14 @@ from django.db import models
 from django.utils.dates import WEEKDAYS
 
 
+class Person(models.Model):
+    user = models.ForeignKey('auth.User')
+    picture = models.ImageField(upload_to='/media/')
+
+    def __str__(self):
+        return self.user.username
+
+
 class Appointment(models.Model):
     title = models.CharField(max_length=256)
     responsible_id = models.ForeignKey('auth.User', related_name="responsible")
