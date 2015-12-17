@@ -16,7 +16,8 @@ Including another URLconf
 from django.conf.urls import include, url
 from django.contrib import admin
 
-from core.views import IndexView, LoginView, LogoutView
+from core.views import IndexView
+from user_auth.views import LoginView, LogoutView
 
 urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
