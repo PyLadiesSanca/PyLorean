@@ -5,4 +5,4 @@ install:
     - pip install -r requirements-test.txt
 # command to run tests
 script:
-    - flake8 pylorean
+    - flake8 --ignore=E501 pylorean
